@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import Particle from "../components/Particle";
 import AnimatedCursor from "react-animated-cursor";
 // import Navber from "../components/Navber/Navber";
 // import Footer from "../components/Footer/Footer";
@@ -42,7 +41,6 @@ const Root = () => {
       ]}
              
              />
-              <Particle></Particle>
             {/* <Navber></Navber> */}
             <Outlet></Outlet>
             {/* <Footer></Footer> */}

@@ -1,6 +1,7 @@
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { motion } from "framer-motion";
 import {fadeIn} from "../../variants"
+import Particle from '../Particle';
 const Banner = () => {
     const [text] = useTypewriter({
         words: ['Rashadul Islam'],
@@ -9,6 +10,7 @@ const Banner = () => {
       })
   return (
     <div>
+        <Particle></Particle>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse gap-10 lg:mx-10">
           <motion.div 
