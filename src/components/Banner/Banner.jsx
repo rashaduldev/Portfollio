@@ -4,7 +4,7 @@ import {fadeIn} from "../../variants"
 const Banner = () => {
     const [text] = useTypewriter({
         words: ['Rashadul Islam'],
-        loop: 3,
+        loop: 9,
         onLoopDone: () => console.log(`loop completed after 3 runs.`)
       })
   return (
