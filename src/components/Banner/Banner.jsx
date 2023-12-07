@@ -29,14 +29,14 @@ const Banner = () => {
            whileInView={"show"}
            viewport={{ once:false,amount:0.7 }}
           className="flex-1 ml-20">
-            <h1 className="text-5xl font-bold">Start your Journey</h1>
+            <h1 className="text-5xl font-bold text-white">Start your Journey</h1>
             <div>
               <div className="App text-5xl font-bold">
-                <span>Md {text}</span>
+                <span className='text-white'>Md {text}</span>
                 <Cursor cursorColor="red" />
               </div>
             </div>
-            <p className="py-6 text-lg">
+            <p className="py-6 text-lg text-white">
               I’m a Junior Web Developer who is passionate about making
               error-free websites with 100% client satisfaction
             </p>
@@ -44,6 +44,7 @@ const Banner = () => {
           </motion.div>
         </div>
       </div>
+   
     </div>
   );
 };
