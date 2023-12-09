@@ -17,14 +17,15 @@ const Particle = () => {
         await console.log(container);
     }, []); 
     return (
-        <Particles
+    <div className="particles-container">
+            <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
             background: {
                 color: {
-                    value: "#1965d8f8",
+                    value: ["#1965d8", "#2989d8", "#0e2badac","#4cdadf"],
                 },
             },
             fpsLimit: 120,
@@ -91,6 +92,7 @@ const Particle = () => {
             detectRetina: true,
         }}
     />
+    </div>
     );
 };
 

@@ -8,7 +8,7 @@ const Banner = () => {
   const [text] = useTypewriter({
     words: ["Rashadul Islam"],
     loop: 9,
-    onLoopDone: () => console.log(`loop completed after 3 runs.`),
+    onLoopDone: () => console.log(`loop completed after 9 runs.`),
   });
   return (
     <div>
