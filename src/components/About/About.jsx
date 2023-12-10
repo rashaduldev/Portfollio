@@ -2,16 +2,14 @@ import { MdDownload } from "react-icons/md";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
-
 const About = () => {
   const handleDownload = () => {
     // Replace 'your-pdf-file.pdf' with the path to your actual PDF file
-    const pdfFilePath = 'your-pdf-file.pdf';
-
+    const pdfFilePath = '../../../public/Md Rashadul Islam_1.5.pdf';
     // Creating an anchor element
     const anchorElement = document.createElement('a');
     anchorElement.href = pdfFilePath;
-    anchorElement.download = 'your-cv.pdf'; // Name of the downloaded file
+    anchorElement.download = ''; // Name of the downloaded file
     anchorElement.click();
   };
   return (
