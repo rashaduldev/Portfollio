@@ -4,6 +4,16 @@ import { fadeIn } from "../../variants";
 
 
 const About = () => {
+  const handleDownload = () => {
+    // Replace 'your-pdf-file.pdf' with the path to your actual PDF file
+    const pdfFilePath = 'your-pdf-file.pdf';
+
+    // Creating an anchor element
+    const anchorElement = document.createElement('a');
+    anchorElement.href = pdfFilePath;
+    anchorElement.download = 'your-cv.pdf'; // Name of the downloaded file
+    anchorElement.click();
+  };
   return (
     <div>
       <div className="hero py-12">
@@ -32,7 +42,7 @@ const About = () => {
             Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
             </p>
            <div className="flex items-center relative justify-center lg:justify-start">
-           <button className="btn btn-warning pr-11">Download CV</button>
+           <button onClick={handleDownload}  className="btn btn-warning pr-11 text-white">Download CV</button>
            <div className="text-2xl absolute right-[33%] lg:left-28">
            <MdDownload />
            </div>
