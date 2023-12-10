@@ -2,8 +2,8 @@ const Education = () => {
   return (
     <div className="py-10">
       <div className="text-center">
-        <h1 className="text-3xl lg:text-4xl font-bold">EDUCATION & SKILL</h1>
-        <p className="text-2xl lg:text-6xl my-5 mb-10">
+        <h1 className="text-3xl lg:text-5xl font-bold">EDUCATION & SKILL</h1>
+        <p className="text-2xl lg:text-4xl my-5 mb-10">
           Showcasing your talent <br /> amplifying your impact
         </p>
       </div>
