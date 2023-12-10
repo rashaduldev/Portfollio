@@ -3,10 +3,10 @@ const Touch = () => {
     <div className="my-12">
       <div>
         <div className="hero min-h-screen">
-          <div className="hero-content flex gap-16 jusb flex-col lg:flex-row-reverse">
-            <div className="flex-1 text-right">
-              <h1 className="text-6xl font-bold">Design and Innovation</h1>
-              <p className="text-3xl my-16 py-10">
+          <div className="hero-content flex lg:gap-16 justify-center flex-col lg:flex-row-reverse">
+            <div className="lg:flex-1 text-center lg:text-right">
+              <h1 className="lg:text-6xl text-center font-bold">Design and Innovation</h1>
+              <p className="lg:text-3xl my-16 py-10">
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit 
                 auting fugit sed thisnquia consequuntur magni dolores eos
                 designer heresm qui ratione voluptatem sequi nesciuNeque porro
