@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import './time.css';
-import { FaQuoteRight } from "react-icons/fa";
+import { FaArrowDown, FaQuoteRight } from "react-icons/fa";
 
 const Time = () => {
   useEffect(() => {
@@ -46,6 +46,7 @@ const Time = () => {
         <div className='text-6xl flex justify-end'> <FaQuoteRight /></div>
         <h1 className='text-4xl'>Time and tide wail for none</h1>
         <h1 className='text-6xl my-16'>Do not waste your time</h1>
+        <div className='text-6xl flex justify-end'><FaArrowDown /></div>
     </div>
     <div className="bodyy">
       <div className="container">

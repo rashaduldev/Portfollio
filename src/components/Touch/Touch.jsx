@@ -1,16 +1,42 @@
+import Swal from "sweetalert2";
+
 const Touch = () => {
+  const handleSend = (e) => {
+    e.preventDefault();
+    const name = e.target.elements.name.value;
+    const email = e.target.elements.email.value;
+    const phone = e.target.elements.phone.value;
+    const message = e.target.elements.message.value;
+    
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Your work has been saved",
+      html: `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Message:</strong> ${message}</p>
+      `,
+      showConfirmButton: false,
+      timer: 3000,
+    });
+    e.target.reset();
+  };
   return (
     <div className="my-12">
       <div>
         <div className="hero lg:min-h-screen">
           <div className="hero-content flex lg:gap-16 justify-center flex-col lg:flex-row-reverse">
             <div className="lg:flex-1 text-center lg:text-right">
-              <h1 className="lg:text-6xl text-center font-bold">Design and Innovation</h1>
+              <h1 className="lg:text-6xl text-center font-bold">
+                Design and Innovation
+              </h1>
               <p className="lg:text-3xl lg:my-16 py-10">
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit 
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                 auting fugit sed thisnquia consequuntur magni dolores eos
                 designer heresm qui ratione voluptatem sequi nesciuNeque porro
-                quisquam est, oursqui dolorem ipsum quia dolor sit amet 
+                quisquam est, oursqui dolorem ipsum quia dolor sit amet
                 consectetur, adipisci velit, sed quia non numquam
               </p>
               <div className="flex text-center gap-6 justify-center">
@@ -25,10 +51,13 @@ const Touch = () => {
               </div>
             </div>
             <div className="card w-full lg:max-w-lg shadow-2xl lg:flex-1">
-                <h2 className="text-3xl font-bold ml-8">GET TOUCH ME?</h2>
-                <p className="text-xl ml-8 mt-5">For your car we will do everything advice design in us repairs and maintenance We are the some preferred.</p>
-              <form className="card-body ">
-                <div className="form-control ">
+              <h2 className="text-3xl font-bold ml-8">GET TOUCH ME?</h2>
+              <p className="text-xl ml-8 mt-5">
+                For your car we will do everything advice design in us repairs
+                and maintenance We are the some preferred.
+              </p>
+              <form className="card-body text-black" onSubmit={handleSend}>
+                <div className="form-control">
                   <label className="label">
                     <span className="label-text text-white text-xl">Name</span>
                   </label>
@@ -36,6 +65,7 @@ const Touch = () => {
                     type="text"
                     placeholder="Name"
                     className="input input-bordered"
+                    name="name"
                     required
                   />
                 </div>
@@ -45,8 +75,9 @@ const Touch = () => {
                   </label>
                   <input
                     type="email"
-                    placeholder="email"
+                    placeholder="Email"
                     className="input input-bordered"
+                    name="email"
                     required
                   />
                 </div>
@@ -58,18 +89,28 @@ const Touch = () => {
                     type="text"
                     placeholder="Phone"
                     className="input input-bordered"
+                    name="phone"
                     required
                   />
                 </div>
-                <div>
-                <label className="label">
-                    <span className="label-text text-white text-xl">Message</span>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-white text-xl">
+                      Message
+                    </span>
                   </label>
-                <textarea className="rounded" name="" id="" cols="60" placeholder="Type your message" rows="8"></textarea>
+                  <textarea
+                    className="rounded"
+                    name="message"
+                    cols="60"
+                    placeholder="Type your message"
+                    rows="8"
+                  ></textarea>
                 </div>
-               
                 <div className="form-control mt-6">
-                  <button className="btn btn-primary">Send</button>
+                  <button type="submit" className="btn btn-primary">
+                    Send
+                  </button>
                 </div>
               </form>
             </div>
