@@ -44,15 +44,15 @@ const Technology = () => {
         {technologyData.map((tech) => (
           <div
             key={tech.id}
-            className={`text-center relative transition duration-300 ${
-              hoveredCard === tech.id ? 'rounded-full py-8 overflow-hidden' : ''}`}
+            className={`text-center relative transition duration-300 shadow-2xl rounded-lg ${
+              hoveredCard === tech.id ? 'rounded-lg overflow-hidden' : ''}`}
             onMouseEnter={() => handleHover(tech.id)}
             onMouseLeave={() => handleLeave()}
           >
-            <div className="text-9xl flex justify-center rounded-lg py-3" style={{ border:'1px solid blue', }}>
+            <div className="text-9xl flex justify-center rounded-lg py-3" >
               {tech.icon}
             </div>
-            <h3 className="text-2xl">{tech.name}</h3>
+            <h3 className="text-2xl py-2">{tech.name}</h3>
             {renderOverlay(tech.id, tech.link)}
           </div>
         ))}
