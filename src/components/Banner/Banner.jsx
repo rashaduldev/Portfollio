@@ -3,13 +3,20 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import Particle from "../Particle";
 import { Link } from "react-router-dom";
-import { FaAngleDoubleRight } from "react-icons/fa";
+import { FaAngleDoubleRight, FaDownload } from "react-icons/fa";
 const Banner = () => {
   const [text] = useTypewriter({
     words: ["Rashadul Islam"],
     loop: 9,
     onLoopDone: () => console.log(`loop completed after 9 runs.`),
   });
+  const handleDownload = () => {
+    const pdfFilePath = '../../../public/Md Rashadul Islam_1.6.pdf';
+    const anchorElement = document.createElement('a');
+    anchorElement.href = pdfFilePath;
+    anchorElement.download = 'Rashadul Islam CV';
+    anchorElement.click();
+  };
   return (
     <div>
       <Particle></Particle>
@@ -47,7 +54,14 @@ const Banner = () => {
               I’m a Junior Web Developer who is passionate about making
               error-free websites with 100% client satisfaction
             </p>
-            <Link to={'/rabby'}>
+           <div className="flex gap-9">
+           <div className="relative">
+            <button  onClick={handleDownload}  className="btn btn-active btn-primary font-bold text-2xl h-12 w-56 pr-16">Resume</button>
+            <div className="text-3xl text-white absolute top-3 right-28 md:left-44 lg:right-64">
+                 <FaDownload></FaDownload>
+                </div>
+            </div>
+           <Link to={'/rabby'}>
               <div className="flex items-center relative">
                 <button className="btn btn-secondary font-bold text-2xl h-12 w-56 pr-16">Explore Me</button>
                 <div className="text-3xl text-white absolute right-28 md:left-44 lg:right-64">
@@ -55,6 +69,8 @@ const Banner = () => {
                 </div>
               </div>
             </Link>
+          
+           </div>
           </motion.div>
         </div>
       </div>

@@ -4,12 +4,10 @@ import { fadeIn } from "../../variants";
 
 const About = () => {
   const handleDownload = () => {
-    // Replace 'your-pdf-file.pdf' with the path to your actual PDF file
-    const pdfFilePath = '../../../public/Md Rashadul Islam_1.5.pdf';
-    // Creating an anchor element
+    const pdfFilePath = '../../../public/Md Rashadul Islam_1.6.pdf';
     const anchorElement = document.createElement('a');
     anchorElement.href = pdfFilePath;
-    anchorElement.download = ''; // Name of the downloaded file
+    anchorElement.download = '';
     anchorElement.click();
   };
   return (
