@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { FaAppStore } from "react-icons/fa";
 import { MdWeb, MdWebStories } from "react-icons/md";
+import { motion } from "framer-motion";
+import { fadeIn } from '../../variants';
 
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -34,7 +36,11 @@ const Services = () => {
       <h3 className='text-2xl lg:text-4xl text-center my-5'>Crafting stories through 
             design and <br /> innovation with  development</h3>
       <div className="grid grid-cols-1 lg:grid-cols-3 justify-center gap-16 mx-16 my-10">
-        <div
+        <motion.div
+          variants={fadeIn("down", 0.1)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.9 }}
           className="relative card bg-blue-500 shadow-xl"
           onMouseEnter={() => handleHover(1)}
           onMouseLeave={() => handleLeave()}
@@ -47,9 +53,13 @@ const Services = () => {
             <p>Nemo design enim ipsam voluptatem quim voluptas sit aspernaturaut odit auting fugit sed thisnquia consequuntur magni doloreseos designer heresm qui</p>
           </div>
           {renderOverlay(1)}
-        </div>
+        </motion.div>
         
-        <div
+        <motion.div
+         variants={fadeIn("up", 0.1)}
+         initial="hidden"
+         whileInView={"show"}
+         viewport={{ once: false, amount: 0.9 }}
           className="relative card bg-blue-500 shadow-xl"
           onMouseEnter={() => handleHover(2)}
           onMouseLeave={() => handleLeave()}
@@ -62,9 +72,13 @@ const Services = () => {
             <p>Nemo design enim ipsam voluptatem quim voluptas sit aspernaturaut odit auting fugit sed thisnquia consequuntur magni doloreseos designer heresm qui</p>
           </div>
           {renderOverlay(2)}
-        </div>
+        </motion.div>
         
-        <div
+        <motion.div
+         variants={fadeIn("down", 0.1)}
+         initial="hidden"
+         whileInView={"show"}
+         viewport={{ once: false, amount: 0.9 }}
           className="relative card bg-blue-500 shadow-xl"
           onMouseEnter={() => handleHover(3)}
           onMouseLeave={() => handleLeave()}
@@ -77,7 +91,7 @@ const Services = () => {
             <p>Nemo design enim ipsam voluptatem quim voluptas sit aspernaturaut odit auting fugit sed thisnquia consequuntur magni doloreseos designer heresm qui</p>
           </div>
           {renderOverlay(3)}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

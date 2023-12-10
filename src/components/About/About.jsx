@@ -1,17 +1,30 @@
 import { MdDownload } from "react-icons/md";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
+
 
 const About = () => {
   return (
     <div>
       <div className="hero py-12">
         <div className="hero-content flex flex-col lg:flex-row-reverse">
-          <div className="flex-1 justify-center flex">
+          <motion.div 
+               variants={fadeIn("left", 0.1)}
+               initial="hidden"
+               whileInView={"show"}
+               viewport={{ once: false, amount: 0.9 }}
+          className="flex-1 justify-center flex">
             <img
               src="https://i.ibb.co/bW9g4dj/Hello-2.png"
               className="rounded-lg shadow-2xl"
             />
-          </div>
-          <div className="flex-1 text-center lg:text-left">
+          </motion.div>
+          <motion.div 
+           variants={fadeIn("right", 0.1)}
+           initial="hidden"
+           whileInView={"show"}
+           viewport={{ once: false, amount: 0.9 }}
+          className="flex-1 text-center lg:text-left">
             <h2 className="text-4xl font-bold lg:text-left text-center">About me</h2>
             <div className="divider divider-accent lg:mx-0 mx-20 lg:mr-96"></div>
             <h1 className="text-2xl text-center lg:text-left lg:text-5xl my-5">Transforming visions into exceptional portfolios</h1>
@@ -24,7 +37,7 @@ const About = () => {
            <MdDownload />
            </div>
            </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

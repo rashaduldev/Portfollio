@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiExpress, SiMongodb, SiTailwindcss } from "react-icons/si";
+import { fadeIn } from '../../variants';
+import { motion } from "framer-motion";
 
 const Technology = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -42,7 +44,11 @@ const Technology = () => {
       <h1 className="text-5xl py-3 font-bold">Technologies</h1>
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 my-10">
         {technologyData.map((tech) => (
-          <div
+          <motion.div
+          variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.4 }}
             key={tech.id}
             className={`text-center relative transition duration-300 shadow-2xl rounded-lg ${
               hoveredCard === tech.id ? 'rounded-lg overflow-hidden' : ''}`}
@@ -54,7 +60,7 @@ const Technology = () => {
             </div>
             <h3 className="text-2xl py-2">{tech.name}</h3>
             {renderOverlay(tech.id, tech.link)}
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
