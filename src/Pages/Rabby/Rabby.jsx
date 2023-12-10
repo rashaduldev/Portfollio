@@ -1,4 +1,5 @@
 import About from "../../components/About/About";
+import Education from "../../components/Education/Education";
 import Nav from "../../components/Navber/Nav";
 import Services from "../../components/Services/Services";
 import Technology from "../../components/Technology/Technology";
@@ -17,6 +18,7 @@ const Rabby = () => {
            <Technology></Technology>
            <About></About>
            <Touch></Touch>
+           <Education></Education>
         </div>
     );
 };
