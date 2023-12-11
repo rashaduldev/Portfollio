@@ -1,8 +1,14 @@
 import { useEffect } from 'react';
 import './time.css';
 import { FaArrowDown, FaQuoteRight } from "react-icons/fa";
+import { useTypewriter } from 'react-simple-typewriter';
 
 const Time = () => {
+  const [text] = useTypewriter({
+    words: ["your time"],
+    loop: 9,
+    onLoopDone: () => console.log(`loop completed after 9 runs.`),
+  });
   useEffect(() => {
     const updateClock = () => {
       const hr = document.querySelector('#hr');
@@ -45,7 +51,7 @@ const Time = () => {
     <div className='pb-20'>
         <div className='text-6xl flex justify-end'> <FaQuoteRight /></div>
         <h1 className='text-4xl'>Time and tide wail for none</h1>
-        <h1 className='text-6xl my-16'>Do not waste your time</h1>
+        <h1 className='text-6xl my-16'>Do not<br />waste <span className='text-blue-700 font-bold'>{text}</span></h1>
         <div className='text-6xl flex justify-end'><FaArrowDown /></div>
     </div>
     <div className="bodyy">
