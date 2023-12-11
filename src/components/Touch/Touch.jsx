@@ -1,3 +1,4 @@
+import CountUp from 'react-countup';
 import Swal from "sweetalert2";
 
 const Touch = () => {
@@ -44,11 +45,12 @@ const Touch = () => {
               </p>
               <div className="flex text-center gap-6 justify-center">
                 <div className="shadow-2xl lg:p-7 rounded-xl">
-                  <p className="lg:text-5xl">10K+</p>
+                  <p className="lg:text-5xl"><CountUp end={100} />K+</p>
+                  
                   <p className="lg:text-2xl py-3">Compleate Project</p>
                 </div>
                 <div className="shadow-2xl lg:p-7 rounded-xl">
-                  <p className="lg:text-5xl">800+</p>
+                  <p className="lg:text-5xl"><CountUp end={700} />+</p>
                   <p className="lg:text-2xl py-3">Client Review</p>
                 </div>
               </div>
