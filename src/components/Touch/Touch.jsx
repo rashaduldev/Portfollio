@@ -11,8 +11,11 @@ const Touch = () => {
     Swal.fire({
       position: "top-end",
       icon: "success",
-      title: "Your work has been saved",
+      title: "Thank you for your message mr," +name,
       html: `
+      <p>We will contact you very soon</p>
+      <br>
+        <p><strong>Your Sending info</strong></p>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
