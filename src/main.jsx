@@ -8,11 +8,13 @@ import {
 import Root from './Root/Root';
 import Home from './Pages/Home/Home';
 import Rabby from './Pages/Rabby/Rabby';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
