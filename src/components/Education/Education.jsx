@@ -13,14 +13,14 @@ const Education = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:text-left mx-10 text-center">
         <div className="shadow-2xl p-3 rounded-lg">
           <Link to={"https://green.edu.bd"}>
-            <button className="btn btn-outline btn-warning text-3xl">
+            <button className="btn btn-outline btn-warning text-lg lg:text-3xl">
               2022-Running(3rd Year)
             </button>
-            <h1 className="text-4xl font-bold mt-3">
+            <h1 className="text-2xl lg:text-4xl font-bold mt-3">
               Green University of Bangladesh
             </h1>
             <p className="text-2xl">BSc in CSE</p>
-            <p className="my-5 text-2xl">Location:Purbachal,Narayangang</p>
+            <p className="my-5 text-lg lg:text-2xl">Location:Purbachal,Narayangang</p>
             <ul className="flex gap-5 font-bold">
               <li>Email: admission@green.edu.bd</li>
               <li>Phone: +880 9614482482</li>
@@ -32,7 +32,7 @@ const Education = () => {
             <button className="btn btn-outline btn-warning text-3xl">
               2019-2021
             </button>
-            <h1 className="text-4xl font-bold mt-3">
+            <h1 className="text-2xl lg:text-4xl font-bold mt-3">
               Dhaka Polytechnic Institute
             </h1>
             <p className="text-2xl">Computer Technology</p>
@@ -55,7 +55,7 @@ const Education = () => {
             <button className="btn btn-outline btn-warning text-3xl">
               2017-2018
             </button>
-            <h1 className="text-4xl font-bold mt-3">
+            <h1 className="text-2xl lg:text-4xl font-bold mt-3">
               CoxsBazar Polytechnic Institute
             </h1>
             <p className="text-2xl">Computer Technology</p>
@@ -77,7 +77,7 @@ const Education = () => {
             <button className="btn btn-outline btn-warning text-3xl">
               2013-2017
             </button>
-            <h1 className="text-4xl font-bold mt-3">Nawdabash High School</h1>
+            <h1 className="text-2xl lg:text-4xl font-bold mt-3">Nawdabash High School</h1>
             <p className="text-2xl">Science</p>
             <p className="my-5 text-2xl">Kurigram</p>
             <ul className="flex gap-5 justify-end font-bold">

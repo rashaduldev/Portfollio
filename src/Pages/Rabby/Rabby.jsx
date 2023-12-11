@@ -1,5 +1,6 @@
 import About from "../../components/About/About";
 import Education from "../../components/Education/Education";
+import Experience from "../../components/Experience/Experience";
 import Footer from "../../components/Footer/Footer";
 import Nav from "../../components/Navber/Nav";
 import Projects from "../../components/Projects/Projects";
@@ -15,7 +16,7 @@ const Rabby = () => {
             <Time></Time>
            <div>
            <Services></Services>
-           <div className="top-12 right-32 lg:right-3 navbar fixed z-10 bg-opacity-70 bg-black text-white w-[3.5%] rounded-xl">
+           <div className="top-12 right-16 lg:right-3 navbar fixed z-10 bg-opacity-70 bg-black text-white w-[10%] lg:w-[3.5%] rounded-xl">
            <Nav></Nav>
            </div>
            </div>
@@ -25,6 +26,7 @@ const Rabby = () => {
            <About></About>
            <Touch></Touch>
            <Education></Education>
+           <Experience></Experience>
            <Footer></Footer>
         </div>
     );
