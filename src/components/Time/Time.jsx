@@ -54,7 +54,7 @@ const Time = () => {
         <h1 className='text-6xl my-16'>Do not<br />waste <span className='text-blue-700 font-bold'>{text}</span></h1>
         <div className='text-6xl flex justify-end'><FaArrowDown /></div>
     </div>
-    <div className="bodyy">
+    <div className="bodyy w-40">
       <div className="container">
         <div className="clock">
           <div className="circle" id="sc" style={{ '--clr': '#04fc43' }}><i /></div>

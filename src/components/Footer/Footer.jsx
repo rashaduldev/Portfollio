@@ -1,19 +1,13 @@
-
-import { useTypewriter, Cursor } from 'react-simple-typewriter'
 const Footer = () => {
-    const [text] = useTypewriter({
-        words: ['Hello', 'From', 'Typewriter', 'Hook!'],
-        loop: 3,
-        onLoopDone: () => console.log(`loop completed after 3 runs.`)
-      })
-    return (
-        <div>
-             <div className='App'>
-      <span>{text}</span>
-      <Cursor cursorColor='red' />
+  return (
+    <div className="shadow-2xl">
+      <div className="footer footer-center p-4  text-white">
+        <aside>
+          <p>Copyright © 2023 - MD RASHADUL ISLAM</p>
+        </aside>
+      </div>
     </div>
-        </div>
-    );
+  );
 };
 
 export default Footer;

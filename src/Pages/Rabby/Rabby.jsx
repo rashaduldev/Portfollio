@@ -1,5 +1,6 @@
 import About from "../../components/About/About";
 import Education from "../../components/Education/Education";
+import Footer from "../../components/Footer/Footer";
 import Nav from "../../components/Navber/Nav";
 import Projects from "../../components/Projects/Projects";
 import Services from "../../components/Services/Services";
@@ -10,7 +11,7 @@ import Touch from "../../components/Touch/Touch";
 
 const Rabby = () => {
     return (
-        <div className="bg-gradient-to-r from-blue-500 to-purple-500 py-10 text-white relative">
+        <div className="bg-gradient-to-r from-blue-500 to-purple-500 py-0 text-white w-full relative">
             <Time></Time>
            <div>
            <Services></Services>
@@ -24,6 +25,7 @@ const Rabby = () => {
            <About></About>
            <Touch></Touch>
            <Education></Education>
+           <Footer></Footer>
         </div>
     );
 };

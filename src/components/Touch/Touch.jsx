@@ -29,14 +29,13 @@ const Touch = () => {
   };
   return (
     <div className="my-12">
-      <div>
-        <div className="hero lg:min-h-screen">
+        <div className="hero lg:min-h-screen ">
           <div className="hero-content flex lg:gap-16 justify-center flex-col lg:flex-row-reverse">
-            <div className="lg:flex-1 text-center lg:text-right">
-              <h1 className="lg:text-6xl text-center font-bold">
+            <div className="text-center lg:text-right">
+              <h1 className="text-2xl lg:text-6xl text-center font-bold">
                 Design and Innovation
               </h1>
-              <p className="lg:text-3xl lg:my-16 py-10">
+              <p className="text-xl lg:text-3xl lg:my-16 py-10">
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                 auting fugit sed thisnquia consequuntur magni dolores eos
                 designer heresm qui ratione voluptatem sequi nesciuNeque porro
@@ -55,7 +54,7 @@ const Touch = () => {
                 </div>
               </div>
             </div>
-            <div className="card w-full lg:max-w-lg shadow-2xl lg:flex-1">
+            <div className="card max-w-sm lg:max-w-lg shadow-2xl ">
               <h2 className="text-3xl font-bold ml-8">GET TOUCH ME?</h2>
               <p className="text-xl ml-8 mt-5">
                 For your car we will do everything advice design in us repairs
@@ -121,7 +120,6 @@ const Touch = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };
