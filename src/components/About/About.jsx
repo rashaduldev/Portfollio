@@ -15,7 +15,7 @@ const About = () => {
       <div className="hero py-12">
         <div className="hero-content flex flex-col lg:flex-row-reverse">
           <motion.div 
-               variants={fadeIn("left", 0.1)}
+               variants={fadeIn("down", 0.1)}
                initial="hidden"
                whileInView={"show"}
                viewport={{ once: false, amount: 0.9 }}
@@ -26,7 +26,7 @@ const About = () => {
             />
           </motion.div>
           <motion.div 
-           variants={fadeIn("right", 0.1)}
+           variants={fadeIn("up", 0.1)}
            initial="hidden"
            whileInView={"show"}
            viewport={{ once: false, amount: 0.9 }}

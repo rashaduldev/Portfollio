@@ -54,10 +54,10 @@ const Banner = () => {
               I’m a Junior Web Developer who is passionate about making
               error-free websites with 100% client satisfaction
             </p>
-           <div className="flex gap-9">
+           <div className="flex flex-col lg:flex-row gap-9">
            <div className="relative">
             <button  onClick={handleDownload}  className="btn btn-active btn-primary font-bold text-2xl h-12 w-56 pr-16">Resume</button>
-            <div className="text-3xl text-white absolute top-3 right-28 md:left-44 lg:right-64">
+            <div className="text-2xl lg:text-3xl text-white absolute top-3 right-28 md:left-44 lg:right-64">
                  <FaDownload></FaDownload>
                 </div>
             </div>

@@ -109,7 +109,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      <div className="card flex flex-col lg:flex-row-reverse card-side mx-10 shadow-xl my-10 max-h-screen">
+      <div className="card flex flex-col lg:flex-row-reverse card-side mx-10 shadow-xl my-10 lg:max-h-screen">
         <figure className="flex-1">
           <img
             className="h-full w-full rounded-r-2xl"
@@ -117,7 +117,7 @@ const Experience = () => {
             alt="uysystems"
           />
         </figure>
-        <div className="pl-3 pt-5">
+        <div className="p-5">
           <h1 className="text-5xl font-bold text-center">ShopUp</h1>
           <div className="divider divider-accent mx-10"></div>
           <h2 className="card-title flex justify-center text-3xl text-center lg:text-left">IT OFFICER</h2>
