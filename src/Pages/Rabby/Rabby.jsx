@@ -6,14 +6,14 @@ import Nav from "../../components/Navber/Nav";
 import Projects from "../../components/Projects/Projects";
 import Services from "../../components/Services/Services";
 import Technology from "../../components/Technology/Technology";
-import Time from "../../components/Time/Time";
+// import Time from "../../components/Time/Time";
 import Touch from "../../components/Touch/Touch";
 
 
 const Rabby = () => {
     return (
         <div className="bg-gradient-to-r from-blue-500 to-purple-500 py-0 text-white w-full relative">
-            <Time></Time>
+            {/* <Time></Time> */}
            <div>
            <Services></Services>
            <div className="top-12 right-16 lg:right-3 navbar fixed z-10 bg-opacity-70 bg-black text-white w-[10%] lg:w-[3.5%] rounded-xl">

@@ -47,14 +47,14 @@ const Time = () => {
   }, []);
 
   return (
-  <div className='flex flex-col lg:flex-row-reverse justify-evenly items-center'>
+  <div className='flex flex-col lg:flex-row-reverse justify-evenly items-center max-w-42'>
     <div className='pb-20'>
         <div className='text-6xl flex justify-end'> <FaQuoteRight /></div>
         <h1 className='text-2xl lg:text-4xl'>Time and tide wail for none</h1>
         <h1 className='text-4xl lg:text-6xl my-16'>Do not<br />waste <span className='text-blue-700 font-bold'>{text}</span></h1>
         <div className='text-6xl flex justify-end'><a href="#bottom"><FaArrowDown /></a></div>
     </div>
-    <div className="bodyy w-40">
+    <div className="bodyy">
       <div className="container">
         <div className="clock">
           <div className="circle" id="sc" style={{ '--clr': '#04fc43' }}><i /></div>

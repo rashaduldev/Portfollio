@@ -3,7 +3,7 @@ const Experience = () => {
     <div>
       <h1 className="text-5xl font-bold text-center">Experience</h1>
       <div className="divider divider-accent mx-28"></div>
-      <div className="card card-side mx-10 shadow-xl my-10">
+      <div className="card flex flex-col lg:flex-row card-side mx-10 shadow-xl my-10">
         <figure>
           <img
             className="h-full rounded-r-2xl"
@@ -12,15 +12,15 @@ const Experience = () => {
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title text-3xl">PHP and LARAVEL DEVELOPER</h2>
+          <h2 className="card-title text-3xl text-center lg:text-left">PHP and LARAVEL DEVELOPER</h2>
           <div className="flex justify-between">
             <div>
-              <p className="text-2xl font-bold text-yellow-300">Internship</p>
-              <p className="text-3xl">BackEnd Developer</p>
-              <p className="text-xl">
+              <p className="text-2xl font-bold text-yellow-300 text-center lg:text-left">Internship</p>
+              <p className="text-3xl text-center lg:text-left">BackEnd Developer</p>
+              <p className="text-xl text-center lg:text-left">
                 Duration: 3 Months (August 2023-November 2023)
               </p>
-              <p className="text-2xl">
+              <p className="text-2xl text-center lg:text-left">
                 Location:{" "}
                 <span>
                   <a href="#">Wareless gate mohakhali</a>
@@ -29,12 +29,12 @@ const Experience = () => {
             </div>
           </div>
           <div>
-            <p className="text-2xl font-bold">
+            <p className="text-2xl font-bold text-center lg:text-left">
               Teck Stack:(Tailwind, JavaScript, PHP, Laravel)
             </p>
           </div>
           <div>
-            <p className="text-2xl">Management:</p>
+            <p className="text-2xl text-center lg:text-left">Management:</p>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 justify-evenly">
               <div className="text-center shadow-2xl p-2 rounded-lg">
                 <div>
@@ -120,28 +120,28 @@ const Experience = () => {
         <div className="pl-3 pt-5">
           <h1 className="text-5xl font-bold text-center">ShopUp</h1>
           <div className="divider divider-accent mx-10"></div>
-          <h2 className="card-title text-3xl">IT OFFICER</h2>
+          <h2 className="card-title flex justify-center text-3xl text-center lg:text-left">IT OFFICER</h2>
           <div className="flex justify-between">
             <div>
-              <p className="text-2xl font-bold text-yellow-300">Full-Time</p>
+              <p className="text-2xl font-bold text-yellow-300  text-center lg:text-left">Full-Time</p>
               <p className="text-xl">
-                <span className="font-bold">Duration:</span> 1 years 1 Months
+                <span className="font-bold flex justify-center text-center lg:text-left">Duration:</span> 1 years 1 Months
                 (july 2022-August 2023)
               </p>
-              <p className="text-2xl">
+              <p className="text-2xl text-center lg:text-left">
                 Location:{" "}
                 <span>
                   <a href="#">Sukrabad, Dhanmondi 32</a>
                 </span>
               </p>
-              <p className="text-xl">Brance: Robi Dhanmondi (ROBI & AIRTEL)</p>
-              <p className="text-lg">
+              <p className="text-xl text-center lg:text-left">Brance: Robi Dhanmondi (ROBI & AIRTEL)</p>
+              <p className="text-lg text-center lg:text-left">
                 Tech-Stack: MS-Word, MS-Excel , Powerpoint
               </p>
             </div>
           </div>
           <div className="mt-10">
-            <p className="text-2xl">Management:</p>
+            <p className="text-2xl text-center lg:text-left">Management:</p>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 justify-evenly">
               <div className="text-center shadow-2xl p-2 rounded-lg">
                 <div>
