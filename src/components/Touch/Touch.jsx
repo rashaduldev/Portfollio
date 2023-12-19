@@ -104,7 +104,7 @@ const Touch = () => {
                     </span>
                   </label>
                   <textarea
-                    className="rounded"
+                    className="rounded input input-bordered h-36 pt-2"
                     name="message"
                     cols="60"
                     placeholder="Type your message"
