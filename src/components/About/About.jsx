@@ -21,7 +21,7 @@ const About = () => {
                viewport={{ once: false, amount: 0.9 }}
           className="flex-1 justify-center flex">
             <img
-              src="https://i.ibb.co/bW9g4dj/Hello-2.png"
+              src="https://i.ibb.co/M7HK01N/rashadul.png"
               className="rounded-lg shadow-2xl"
             />
           </motion.div>
