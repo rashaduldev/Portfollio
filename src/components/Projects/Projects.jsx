@@ -13,7 +13,8 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
     return (
         <div className="mx-16">
-            <h1 className="text-6xl font-bold text-center my-11">Projects</h1>
+            <h1 className="text-6xl font-bold text-center pt-11">Projects</h1>
+            <div className="divider divider-accent mx-14 lg:mx-96"></div>
             <>
       <Swiper
         effect={'cards'}
