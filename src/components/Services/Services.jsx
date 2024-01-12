@@ -3,6 +3,7 @@ import { FaAppStore } from "react-icons/fa";
 import { MdWeb, MdWebStories } from "react-icons/md";
 import { motion } from "framer-motion";
 import { fadeIn } from '../../variants';
+import Swal from 'sweetalert2';
 
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -10,9 +11,28 @@ const Services = () => {
   const handleHover = (cardNumber) => {
     setTimeout(() => {
       setHoveredCard(cardNumber);
-    }, 100); // Fixed delay for all cards (3000 milliseconds)
+    }, 100); 
   };
-
+  const handlePurches=()=>{
+    console.log('ok');
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Deleted!",
+          text: "Your file has been deleted.",
+          icon: "success"
+        });
+      }
+    });
+  }
   const handleLeave = () => {
     setHoveredCard(null);
   };
@@ -21,7 +41,7 @@ const Services = () => {
     if (hoveredCard === cardNumber) {
       return (
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-90 rounded-lg flex items-center justify-center gap-7">
-          <button className="btn btn-warning">Purchess</button>
+          <button onClick={handlePurches} className="btn btn-warning">Purchess</button>
           <button className="btn btn-outline btn-secondary">View Details</button>
         </div>
       );

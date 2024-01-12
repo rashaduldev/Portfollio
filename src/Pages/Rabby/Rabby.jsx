@@ -12,7 +12,7 @@ import Touch from "../../components/Touch/Touch";
 
 const Rabby = () => {
     return (
-        <div className="bg-gradient-to-r from-blue-500 to-purple-500 py-0 text-white w-full relative">
+        <div className="bg-gradient-to-r from-blue-600 to-purple-500 py-0 text-white w-full relative">
             {/* <Time></Time> */}
            <div>
            <Services></Services>
