@@ -9,7 +9,7 @@ const Education = () => {
           Showcasing your talent <br /> amplifying your impact
         </p>
       </div>
-      <p className="text-2xl ml-16 font-bold"> Education</p>
+      <p className="text-4xl my-3 lg:ml-12 font-bold text-center lg:text-left mx-auto"> Education</p>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:text-left mx-10 text-center">
         <div className="shadow-2xl p-3 rounded-lg">
           <Link to={"https://green.edu.bd"}>
