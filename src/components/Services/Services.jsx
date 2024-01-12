@@ -14,21 +14,39 @@ const Services = () => {
     }, 100); 
   };
   const handlePurches=()=>{
-    console.log('ok');
     Swal.fire({
-      title: "Are you sure?",
-      text: "You won't be able to revert this!",
-      icon: "warning",
+      title: "Submit This Form",
+      input: "text",
+      inputAttributes: {
+        autocapitalize: "off"
+      },
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, delete it!"
+      confirmButtonText: "Look up",
+      showLoaderOnConfirm: true,
+      preConfirm: async (login) => {
+        try {
+          const githubUrl = `
+            https://api.github.com/users/${login}
+          `;
+          const response = await fetch(githubUrl);
+          if (!response.ok) {
+            return Swal.showValidationMessage(`
+              ${JSON.stringify(await response.json())}
+            `);
+          }
+          return response.json();
+        } catch (error) {
+          Swal.showValidationMessage(`
+            Request failed: ${error}
+          `);
+        }
+      },
+      allowOutsideClick: () => !Swal.isLoading()
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire({
-          title: "Deleted!",
-          text: "Your file has been deleted.",
-          icon: "success"
+          title: `${result.value.login}'s avatar`,
+          imageUrl: result.value.avatar_url
         });
       }
     });
