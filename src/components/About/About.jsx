@@ -38,8 +38,8 @@ const About = () => {
             Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
             </p>
            <div className="flex items-center relative justify-center lg:justify-start">
-           <button onClick={handleDownload}  className="btn btn-warning pr-11 text-white">Download CV</button>
-           <div className="text-2xl absolute right-[33%] lg:left-28">
+           <button onClick={handleDownload}  className="btn bg-[#4c4c4ce3] hover:bg-[#4C4C4C] pr-11 text-white">Download CV</button>
+           <div className="text-2xl text-white absolute right-[33%] lg:left-28">
            <MdDownload />
            </div>
            </div>

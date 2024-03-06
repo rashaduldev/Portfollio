@@ -55,12 +55,12 @@ const Touch = () => {
               </div>
             </div>
             <div className="card max-w-sm lg:max-w-lg shadow-2xl ">
-              <h2 className="text-3xl font-bold ml-8">GET TOUCH ME?</h2>
-              <p className="text-xl ml-8 mt-5">
+              <h2 className="text-3xl font-bold mx-8 pt-5">GET TOUCH ME?</h2>
+              <p className="text-xl mx-8 mt-5">
                 For your car we will do everything advice design in us repairs
                 and maintenance We are the some preferred.
               </p>
-              <form className="card-body text-black" onSubmit={handleSend}>
+              <form className="mx-5 text-black" onSubmit={handleSend}>
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text text-white text-xl">Name</span>
@@ -112,7 +112,7 @@ const Touch = () => {
                   ></textarea>
                 </div>
                 <div className="form-control mt-6">
-                  <button type="submit" className="btn btn-primary">
+                  <button type="submit" className="btn bg-[#4c4c4ce3] hover:bg-[#4C4C4C] text-white text-lg mb-5">
                     Send
                   </button>
                 </div>
