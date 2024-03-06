@@ -41,11 +41,11 @@ const Banner = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="flex-1 ml-20"
           >
-            <h1 className="text-5xl font-bold text-white">
-              Start your Journey
+            <h1 className="lg:text-4xl text-2xl font-bold text-white">
+              Start your Journey With
             </h1>
             <div>
-              <div className="App text-5xl font-bold">
+              <div className="App lg:text-4xl text-2xl font-bold">
                 <span className="text-white">Md {text}</span>
                 <Cursor cursorColor="red" />
               </div>
@@ -54,7 +54,7 @@ const Banner = () => {
               I’m a Junior Web Developer who is passionate about making
               error-free websites with 100% client satisfaction
             </p>
-           <div className="flex flex-col lg:flex-row gap-9">
+           <div className="flex flex-col lg:flex-row lg:gap-9 gap-3">
            <div className="relative">
             <button  onClick={handleDownload}  className="btn btn-active btn-primary font-bold text-2xl h-12 w-56 pr-16">Resume</button>
             <div className="text-2xl lg:text-3xl text-white absolute top-3 right-28 md:left-44 lg:right-64">
