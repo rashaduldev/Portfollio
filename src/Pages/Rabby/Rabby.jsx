@@ -16,7 +16,7 @@ const Rabby = () => {
             {/* <Time></Time> */}
            <div>
            <Services></Services>
-           <div className="top-12 right-1 navbar fixed z-10 bg-opacity-70 bg-black text-white w-[10%] lg:w-[3.5%] rounded-xl">
+           <div className="top-12 right-1 navbar fixed z-10 bg-opacity-70 bg-black text-white w-[10%] lg:w-[3%] rounded-xl">
            <Nav></Nav>
            </div>
            </div>

@@ -11,7 +11,7 @@ const Banner = () => {
     onLoopDone: () => console.log(`loop completed after 9 runs.`),
   });
   const handleDownload = () => {
-    const pdfFilePath = '../../../public/Md Rashadul Islam_1.6.pdf';
+    const pdfFilePath = '../../../public/Resume of Md Rashadul Islam.pdf';
     const anchorElement = document.createElement('a');
     anchorElement.href = pdfFilePath;
     anchorElement.download = 'Rashadul Islam CV';
@@ -56,15 +56,15 @@ const Banner = () => {
             </p>
            <div className="flex flex-col lg:flex-row lg:gap-9 gap-3">
            <div className="relative">
-            <button  onClick={handleDownload}  className="btn btn-active btn-primary font-bold text-2xl h-12 w-56 pr-16">Resume</button>
-            <div className="text-2xl lg:text-3xl text-white absolute top-3 right-28 md:left-44 lg:right-64">
+            <button  onClick={handleDownload}  className="btn btn-active btn-primary font-bold text-2xl h-12 w-56 pr-24">Resume</button>
+            <div className="text-2xl lg:text-3xl text-white absolute top-3 right-24 md:left-44 lg:right-64">
                  <FaDownload></FaDownload>
                 </div>
             </div>
            <Link to={'/rabby'}>
               <div className="flex items-center relative">
                 <button className="btn btn-secondary font-bold text-2xl h-12 w-56 pr-16">Explore Me</button>
-                <div className="text-3xl text-white absolute right-28 md:left-44 lg:right-64">
+                <div className="text-3xl text-white absolute right-20 md:left-44 lg:right-64">
                   <FaAngleDoubleRight />
                 </div>
               </div>

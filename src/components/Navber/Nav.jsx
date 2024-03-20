@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <div className="">
+        <div className="mx-auto">
            <ul className="flex flex-col w-full text-3xl">
            <Link to={'/'}>
            <li className="flex items-center gap-4 my-3">

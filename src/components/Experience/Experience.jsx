@@ -123,7 +123,7 @@ const Experience = () => {
           <h2 className="card-title flex justify-center text-3xl text-center">IT OFFICER</h2>
           <div className="">
             <div>
-              <p className="text-2xl font-bold text-yellow-300  text-center">Full-Time</p>
+              <p className="text-2xl font-bold text-black  text-center">Full-Time</p>
               <p className="text-xl mx-auto text-center">
                 <span className="font-bold ">Duration:</span> 1 years 1 Months
                 (july 2022-August 2023)
@@ -142,8 +142,8 @@ const Experience = () => {
           </div>
           <div className="mt-10">
             <p className="text-2xl text-center lg:text-left">Management:</p>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 justify-evenly">
-              <div className="text-center shadow-2xl p-2 rounded-lg">
+            <div className="">
+              <div className="text-center shadow-2xl p-2 rounded-lg grid grid-cols-1 lg:grid-cols-3 gap-5 justify-evenly">
                 <div>
                   <div className="avatar">
                     <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
