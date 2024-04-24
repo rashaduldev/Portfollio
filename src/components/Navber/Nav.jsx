@@ -12,7 +12,7 @@ const Nav = () => {
                 
             </li>
            </Link>
-           <Link to={'https://www.facebook.com/mdrashadulislamrabby6452'}>
+           <Link to={'https://www.facebook.com/muhammadrashadul3'}>
            <li className="flex items-center gap-4 my-3">
                 <FaFacebook></FaFacebook>
                 
@@ -24,7 +24,7 @@ const Nav = () => {
                 
             </li>
            </Link>
-          <Link to={'https://www.linkedin.com/in/md-rashadul-islam-789534236'}>
+          <Link to={'https://www.linkedin.com/in/mdrashadulislam7/'}>
           <li className="flex items-center gap-4 my-3">
                 <FaLinkedin></FaLinkedin>
                 
