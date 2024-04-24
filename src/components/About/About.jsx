@@ -11,7 +11,11 @@ const About = () => {
     anchorElement.click();
   };
   return (
-    <div>
+    <div className="py-10">
+          <div className="mx-auto text-center">
+          <h2 className="text-4xl font-bold  text-center">About me</h2>
+          <div className="divider divide-gray-400 mx-14 lg:mx-[450px]"></div>
+          </div>
       <div className="hero py-12">
         <div className="hero-content flex flex-col lg:flex-row-reverse">
           <motion.div 
@@ -31,11 +35,9 @@ const About = () => {
            whileInView={"show"}
            viewport={{ once: false, amount: 0.9 }}
           className="flex-1 text-center lg:text-left">
-            <h2 className="text-4xl font-bold lg:text-left text-center">About me</h2>
-            <div className="divider divider-accent lg:mx-0 mx-20 lg:mr-96"></div>
-            <h1 className="text-2xl text-center lg:text-left lg:text-5xl my-5">Transforming visions into exceptional portfolios</h1>
-            <p className="py-6 te">
-            Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione
+            <h1 className="text-2xl text-center lg:text-left lg:text-5xl my-5 text-gray-700">Web Designer & Developer <span className="text-4xl">App Development also</span></h1>
+            <p className="pb-6 text-gray-700 text-xl">
+            I’m a Frontend web Developer passionate about making error-free websites with Laravel and React.js Framework—a self-taught fast-learner full-stack developer from Dhaka. I have a passion for learning and sharing my knowledge with others as publicly as possible. Now I'm working at Bangladesh Outsourcing Company (BDOSC) as a Full-Stack Web Developer.
             </p>
            <div className="flex items-center relative justify-center lg:justify-start">
            <button onClick={handleDownload}  className="btn bg-[#4c4c4ce3] hover:bg-[#4C4C4C] pr-11 text-white">Download CV</button>

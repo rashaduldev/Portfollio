@@ -2,15 +2,16 @@ import { Link } from "react-router-dom";
 
 const Education = () => {
   return (
-    <div className="py-10">
+    <div className="py-10 lg:mx-32">
       <div className="text-center">
         <h1 className="text-3xl lg:text-5xl font-bold">EDUCATION & SKILL</h1>
+        <div className="divider divide-gray-400 lg:mx-[320px]"></div>
         <p className="text-2xl lg:text-4xl my-5 mb-10">
           Showcasing your talent <br /> amplifying your impact
         </p>
       </div>
-      <p className="text-4xl my-3 lg:ml-12 font-bold text-center lg:text-left mx-auto"> Education</p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:text-left mx-10 text-center">
+      <p className="text-4xl ml-4 my-3 font-bold text-center lg:text-left mx-auto"> Education</p>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:text-left  text-center">
         <div className="shadow-2xl p-3 rounded-lg">
           <Link to={"https://green.edu.bd"}>
             <button className="btn btn-outline btn-warning text-lg lg:text-3xl">
@@ -87,8 +88,8 @@ const Education = () => {
           </Link>
         </div>
       </div>
-      <p className="text-2xl ml-16 font-bold my-7">Skills</p>
-      <div className="mx-10">
+      <p className="text-4xl ml-4 font-bold mt-12 mb-5">Skills</p>
+      <div className="">
       <div className="collapse collapse-arrow shadow-2xl my-5">
           <input type="radio" name="my-accordion-2" />
           <div className="collapse-title text-xl font-medium">

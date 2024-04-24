@@ -40,9 +40,9 @@ const Technology = () => {
   };
 
   return (
-    <div className="mx-16 my-10">
+    <div className="mx-32 my-10">
       <h1 className="text-5xl py-3 font-bold text-center lg:mt-24 pt-9">Technologies</h1>
-      <div className="divider divider-accent mx-14 lg:mx-96"></div>
+      <div className="divider divide-gray-400 mx-14 lg:mx-[320px]"></div>
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 my-10">
         {technologyData.map((tech) => (
           <motion.div

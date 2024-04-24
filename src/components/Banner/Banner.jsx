@@ -57,7 +57,7 @@ const Banner = () => {
            <div className="flex flex-col lg:flex-row lg:gap-9 gap-3">
            <div className="relative">
             <button  onClick={handleDownload}  className="btn btn-active btn-primary font-bold text-2xl h-12 w-56 pr-24">Resume</button>
-            <div className="text-2xl lg:text-3xl text-white absolute top-3 right-24 md:left-44 lg:right-64">
+            <div className="text-2xl text-white absolute top-3 right-24 md:left-44 lg:right-64">
                  <FaDownload></FaDownload>
                 </div>
             </div>

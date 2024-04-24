@@ -14,7 +14,7 @@ const Projects = () => {
     return (
         <div className="mx-16">
             <h1 className="text-6xl font-bold text-center pt-11">Projects</h1>
-            <div className="divider divider-accent mx-14 lg:mx-96"></div>
+            <div className="divider divide-gray-400 mx-14 lg:mx-96"></div>
             <>
       <Swiper
         effect={'cards'}

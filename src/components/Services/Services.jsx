@@ -69,9 +69,9 @@ const Services = () => {
 
   return (
     <div className="py-5">
-      <h1 className="text-5xl text-center font-bold">My Services</h1>
-      <div className="divider divider-accent mx-14 lg:mx-96"></div>
-      <h3 className='text-2xl lg:text-4xl text-center my-5'>Crafting stories through 
+      <h1 className="text-5xl text-center font-bold">Services</h1>
+      <div className="divider divide-gray-400 mx-14 lg:mx-96"></div>
+      <h3 className='text-2xl lg:text-4xl text-center my-5 text-gray-700'>Crafting stories through 
             design and <br /> innovation with  development</h3>
       <div className="grid grid-cols-1 lg:grid-cols-4 justify-center gap-16 lg:mx-16 my-10">
        <div>
